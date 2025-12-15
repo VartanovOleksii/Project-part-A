@@ -49,7 +49,7 @@ namespace TestProject
         public void Name_correct_input()
         {
             //Arrange
-            string name = "Long Afternoon";
+            string name = "Kurt Cobain";
             string expected = name;
 
             //Act
