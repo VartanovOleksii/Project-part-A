@@ -10,6 +10,7 @@ namespace Project__part_A_
         public string RecordLabelName { get; set; }
         public List<Band> Bands { get; set; }
 
+        //Public methods
         public bool SignBand(Band band)
         {
             throw new NotImplementedException();
