@@ -30,6 +30,13 @@
       <FileName>Song.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Project__part_A_.RecordLabel">
+    <Position X="0.75" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAQAAAAAAAAABAAACAAAAAAAAAA=</HashCode>
+      <FileName>RecordLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="Project__part_A_.IPerson">
     <Position X="13.25" Y="1.25" Width="2" />
     <TypeIdentifier>
