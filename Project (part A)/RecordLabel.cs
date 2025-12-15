@@ -11,12 +11,22 @@ namespace Project__part_A_
         public List<Band> Bands { get; set; }
 
         //Public methods
-        public bool SignBand(Band band)
+        public void SignBand(Band band)
         {
             throw new NotImplementedException();
         }
 
-        public double Revenue(Band band, double rate)
+        public void SignBand(List<Band> bands)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UnsignBand(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UnsignBand(string name)
         {
             throw new NotImplementedException();
         }
