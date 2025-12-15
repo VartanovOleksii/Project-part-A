@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Project__part_A_
+{
+    internal class Producer: IPerson
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public double Salary { get; set; }
+
+        public int YearsOfExperience { get; set; }
+        public string Specialization { get; set; }
+
+        public Producer(string name, int age, double salary, string specialization)
+        {
+            Name = name;
+            Age = age;
+            Salary = salary;
+            Specialization = specialization;
+        }
+    }
+}
