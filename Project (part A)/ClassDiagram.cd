@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Project__part_A_.Artist">
+    <Position X="4.25" Y="1.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAEEAAAAQACAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Artist.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Project__part_A_.Producer">
+    <Position X="4.25" Y="4.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAEAAAAQAAAAAAAAAAIAAAAAAAEA=</HashCode>
+      <FileName>Producer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Project__part_A_.IPerson">
+    <Position X="10.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPerson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
