@@ -86,5 +86,45 @@ namespace TestProject
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Producers()
+        {
+            //Arrange
+            Producer producer1 = new Producer("Butch Vig", 70, 100000, "Architecture of grunge sound");
+            List<Producer> producers = new List<Producer>() { producer1 };
+            List<Producer> expected = producers;
+
+            //Act
+            band.Producers = producers;
+            List<Producer> actual = band.Producers;
+
+            //Assert
+            Assert.HasCount(expected.Count, actual);
+            for (int i = 0; i < expected.Count; i++)
+            {
+                Assert.AreEqual(expected[i], actual[i]);
+            }
+        }
+
+        [TestMethod]
+        public void Artists()
+        {
+            //Arrange
+            Artist artist1 = new Artist("Kurt Cobain", 27, 150000, "Electric guitar");
+            List<Artist> artists = new List<Artist>() { artist1 };
+            List<Artist> expected = artists;
+
+            //Act
+            band.Artists = artists;
+            List<Artist> actual = band.Artists;
+
+            //Assert
+            Assert.HasCount(expected.Count, actual);
+            for (int i = 0; i < expected.Count; i++)
+            {
+                Assert.AreEqual(expected[i], actual[i]);
+            }
+        }
     }
 }
