@@ -19,6 +19,11 @@ namespace Project__part_A_
             throw new NotImplementedException();
         }
 
+        public RecordLabel()
+        {
+            throw new NotImplementedException();
+        }
+
         public RecordLabel(string name, List<Band> bands)
         {
             throw new NotImplementedException();

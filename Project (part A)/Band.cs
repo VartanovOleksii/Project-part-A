@@ -11,6 +11,11 @@ namespace Project__part_A_
         public List<Producer> Producers { get; set; }
         public List<Artist> Artists { get; set; }
 
+        public Band()
+        {
+            throw new NotImplementedException();
+        }
+
         public Band(string name, List<Producer> producers)
         {
             throw new NotImplementedException();

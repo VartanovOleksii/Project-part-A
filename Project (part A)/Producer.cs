@@ -13,6 +13,11 @@ namespace Project__part_A_
         public int YearsOfExperience { get; set; }
         public string Specialization { get; set; }
 
+        public Producer()
+        {
+            throw new NotImplementedException();
+        }
+
         public Producer(string name, int age, double salary, string specialization)
         {
             throw new NotImplementedException();

@@ -27,6 +27,11 @@ namespace Project__part_A_
         public Band Band { get; set; }
         public Genre Genre { get; set; }
 
+        public Song()
+        {
+            throw new NotImplementedException();
+        }
+
         public Song(string name, Band band, Genre genre)
         {
             throw new NotImplementedException();
