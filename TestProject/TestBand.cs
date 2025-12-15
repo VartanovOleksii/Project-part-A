@@ -20,7 +20,7 @@ namespace TestProject
             band = null;
         }
 
-
+        //Public properties
         [TestMethod]
         public void BandName_empty_input()
         {

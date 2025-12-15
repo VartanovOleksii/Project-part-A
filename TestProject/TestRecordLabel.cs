@@ -20,7 +20,7 @@ namespace TestProject
             recordLabel = null;
         }
 
-
+        //Public properties
         [TestMethod]
         public void TestMethod1()
         {

@@ -20,7 +20,7 @@ namespace TestProject
             artist = null;
         }
 
-
+        //Public properties
         [TestMethod]
         public void Name_empty_input()
         {
