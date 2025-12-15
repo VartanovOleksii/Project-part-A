@@ -1,4 +1,5 @@
-﻿using Project__part_A_;
+﻿using System.Threading.Tasks.Sources;
+using Project__part_A_;
 
 namespace TestProject
 {
@@ -85,6 +86,47 @@ namespace TestProject
 
             //Assert
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Bands()
+        {
+            //Arrange
+            Producer producer1 = new Producer("Butch Vig", 70, 100000, "Architecture of grunge sound");
+            List<Producer> producers = new List<Producer>() { producer1 };
+
+            Artist artist1 = new Artist("Kurt Cobain", 27, 150000, "Electric guitar");
+            List<Artist> artists = new List<Artist>() { artist1 };
+
+            Band band1 = new Band("Nirvana", producers);
+            band1.Artists.AddRange(artists);
+
+            //Act
+            song.Band = band1;
+
+            Band expected = band1;
+            Band actual = song.Band;
+
+            //Assert
+            for (int i = 0; i < expected.Producers.Count; i++)
+            {
+                Assert.AreEqual(expected.Producers[i].Name, actual.Producers[i].Name);
+                Assert.AreEqual(expected.Producers[i].Age, actual.Producers[i].Age);
+                Assert.AreEqual(expected.Producers[i].Salary, actual.Producers[i].Salary);
+                Assert.AreEqual(expected.Producers[i].YearsOfExperience, actual.Producers[i].YearsOfExperience);
+                Assert.AreEqual(expected.Producers[i].Specialization, actual.Producers[i].Specialization);
+            }
+
+            
+            for (int j = 0; j < expected.Artists.Count; j++)
+            {
+                Assert.AreEqual(expected.Artists[j].Name, actual.Artists[j].Name);
+                Assert.AreEqual(expected.Artists[j].Age, actual.Artists[j].Age);
+                Assert.AreEqual(expected.Artists[j].Salary, actual.Artists[j].Salary);
+                Assert.AreEqual(expected.Artists[j].Instrument, actual.Artists[j].Instrument);
+                Assert.AreEqual(expected.Artists[j].IsActive, actual.Artists[j].IsActive);
+                Assert.AreEqual(expected.Artists[j].FanCount, actual.Artists[j].FanCount);
+            }
         }
     }
 }
