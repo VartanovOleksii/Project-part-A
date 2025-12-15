@@ -8,6 +8,6 @@ namespace Project__part_A_
     {
         public string Play();
         public string Stop();
-        public List<string> GetMetadata();
+        public string GetMetadata();
     }
 }

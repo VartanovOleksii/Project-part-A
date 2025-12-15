@@ -8,7 +8,7 @@ namespace Project__part_A_
     {
         //Public properties
         public string SongName { get; set; }
-        public int TotalPlays { get; set; }
+        public long TotalPlays { get; set; }
 
         public Band Band { get; set; }
         public Genre Genre { get; set; }
@@ -24,7 +24,7 @@ namespace Project__part_A_
             throw new NotImplementedException();
         }
 
-        public List<string> GetMetadata()
+        public string GetMetadata()
         {
             throw new NotImplementedException();
         }
