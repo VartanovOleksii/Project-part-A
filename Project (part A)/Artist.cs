@@ -14,6 +14,11 @@ namespace Project__part_A_
         public bool IsActive { get; set; }
         public int FanCount { get; set; }
 
+        public Artist()
+        {
+            throw new NotImplementedException();
+        }
+
         public Artist(string name, int age, double salary, string instrument)
         {
             throw new NotImplementedException();
