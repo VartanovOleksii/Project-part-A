@@ -14,12 +14,12 @@ namespace Project__part_A_
         public Genre Genre { get; set; }
 
         //Public methods
-        public void Play()
+        public string Play()
         {
             throw new NotImplementedException();
         }
 
-        public void Stop()
+        public string Stop()
         {
             throw new NotImplementedException();
         }

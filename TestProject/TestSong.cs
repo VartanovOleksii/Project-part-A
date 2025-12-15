@@ -128,5 +128,42 @@ namespace TestProject
                 Assert.AreEqual(expected.Artists[j].FanCount, actual.Artists[j].FanCount);
             }
         }
+
+        //Public methods
+        [TestMethod]
+        public void Play()
+        {
+            //Arrange
+            int count = 10;
+            song.TotalPlays = count;
+            song.SongName = "Come as you are";
+
+            //Act
+            string actualRes = song.Play();
+            int actual = song.TotalPlays;
+
+            string expectedRes = $"Now is playing: {song.SongName}";
+            int expected = count + 1;
+
+
+            //Assert
+            Assert.AreEqual(expectedRes, actualRes);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Stop()
+        {
+            //Arrange
+            song.SongName = "Come as you are";
+
+            //Act
+            string actual = song.Stop();
+
+            string expected = $"On pause: {song.SongName}";
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

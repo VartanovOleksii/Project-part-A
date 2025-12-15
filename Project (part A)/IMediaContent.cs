@@ -6,8 +6,8 @@ namespace Project__part_A_
 {
     internal interface IMediaContent
     {
-        public void Play();
-        public void Stop();
+        public string Play();
+        public string Stop();
         public List<string> GetMetadata();
     }
 }
