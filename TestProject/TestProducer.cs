@@ -115,5 +115,72 @@ namespace TestProject
             //Assert
             Assert.AreEqual(expected, actual, 0.001);
         }
+
+        [TestMethod]
+        [DataRow (2)] //less than 3
+        [DataRow (95)] //more than 90
+        public void YearsOfExperience_incorrect_input(int years)
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => producer.YearsOfExperience = years);
+        }
+
+        [TestMethod]
+        public void YearsOfExperience_correct_input()
+        {
+            //Arrange
+            int years = 25;
+            int expected = years;
+
+            //Act
+            producer.YearsOfExperience = years;
+            int actual = producer.YearsOfExperience;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Specialization_empty_input()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.Throws<ArgumentNullException>(() => producer.Specialization = "");
+        }
+
+        [TestMethod]
+        [DataRow("a")] //less than 3 symbols
+        [DataRow("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")] //more than 50 symbols
+        public void Specialization_incorrect_input(string s)
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => producer.Specialization = s);
+        }
+
+        [TestMethod]
+        public void Specialization_correct_input()
+        {
+            //Arrange
+            string specialization = "Architecture of grunge sound";
+            string expected = specialization;
+
+            //Act
+            producer.Specialization = specialization;
+            string actual = producer.Specialization;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
