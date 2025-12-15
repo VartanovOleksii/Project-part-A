@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Project__part_A_
 {
-    internal class RecordLabel
+    public class RecordLabel
     {
         public string RecordLabelName { get; set; }
         public List<Band> Bands { get; set; }

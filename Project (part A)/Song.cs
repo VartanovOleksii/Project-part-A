@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Project__part_A_
 {
-    internal class Song: IMediaContent
+    public class Song: IMediaContent
     {
         public void Play()
         {

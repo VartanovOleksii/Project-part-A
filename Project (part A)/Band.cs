@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Project__part_A_
 {
-    internal class Band
+    public class Band
     {
         public string BandName { get; set; }
         public int MonthlyListening { get; set; }
