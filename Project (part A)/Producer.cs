@@ -15,6 +15,8 @@ namespace Project__part_A_
 
         public Producer(string name, int age, double salary, string specialization)
         {
+            throw new NotImplementedException();
+
             Name = name;
             Age = age;
             Salary = salary;

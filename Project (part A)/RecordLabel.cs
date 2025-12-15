@@ -21,6 +21,8 @@ namespace Project__part_A_
 
         public RecordLabel(string name, List<Band> bands)
         {
+            throw new NotImplementedException();
+
             RecordLabelName = name;
             Bands = bands;
         }

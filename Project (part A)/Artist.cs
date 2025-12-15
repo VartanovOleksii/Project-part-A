@@ -16,6 +16,8 @@ namespace Project__part_A_
 
         public Artist(string name, int age, double salary, string instrument)
         {
+            throw new NotImplementedException();
+
             Name = name;
             Age = age;
             Salary = salary;

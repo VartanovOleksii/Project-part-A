@@ -29,6 +29,8 @@ namespace Project__part_A_
 
         public Song(string name, Band band, Genre genre)
         {
+            throw new NotImplementedException();
+
             SongName = name;
             Band = band;
             Genre = genre;

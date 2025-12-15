@@ -13,6 +13,8 @@ namespace Project__part_A_
 
         public Band(string name, List<Producer> producers)
         {
+            throw new NotImplementedException();
+
             BandName = name;
             Producers = producers;
 
