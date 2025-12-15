@@ -63,7 +63,7 @@ namespace TestProject
 
         [TestMethod]
         [DataRow(-20)] //less than 0
-        public void TotalPlays_incorrect_input(int count)
+        public void TotalPlays_incorrect_input(long count)
         {
             //Arrange
 
@@ -82,7 +82,7 @@ namespace TestProject
 
             //Act
             song.TotalPlays = count;
-            int actual = song.TotalPlays;
+            long actual = song.TotalPlays;
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -140,7 +140,7 @@ namespace TestProject
 
             //Act
             string actualRes = song.Play();
-            int actual = song.TotalPlays;
+            long actual = song.TotalPlays;
 
             string expectedRes = $"Now is playing: {song.SongName}";
             int expected = count + 1;
@@ -161,6 +161,36 @@ namespace TestProject
             string actual = song.Stop();
 
             string expected = $"On pause: {song.SongName}";
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetMetadata()
+        {
+            //Arrange
+            Producer producer1 = new Producer("Butch Vig", 70, 100000, "Architecture of grunge sound");
+            List<Producer> producers = new List<Producer>() { producer1 };
+
+            Artist artist1 = new Artist("Kurt Cobain", 27, 150000, "Electric guitar");
+            List<Artist> artists = new List<Artist>() { artist1 };
+
+            Band band1 = new Band("Nirvana", producers);
+            band1.Artists.AddRange(artists);
+
+            song.SongName = "Come as you are";
+            song.Band = band1;
+            song.Genre = Genre.Rock;
+            song.TotalPlays = 1800000000;
+
+            //Act
+            string actual = song.GetMetadata();
+            string expected =
+                "Name: Come as you are\n" +
+                "Author: Nirvana\n" +
+                "Genre: Rock\n" +
+                "Total plays: 1800000000";
 
             //Assert
             Assert.AreEqual(expected, actual);
