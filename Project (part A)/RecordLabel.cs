@@ -21,12 +21,12 @@ namespace Project__part_A_
             throw new NotImplementedException();
         }
 
-        public void UnsignBand(int index)
+        public bool UnsignBand(int index)
         {
             throw new NotImplementedException();
         }
 
-        public void UnsignBand(string name)
+        public bool UnsignBand(string name)
         {
             throw new NotImplementedException();
         }
