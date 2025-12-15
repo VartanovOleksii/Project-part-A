@@ -6,6 +6,7 @@ namespace Project__part_A_
 {
     public class Artist: IPerson
     {
+        //Public properties
         public string Name { get; set; }
         public int Age { get; set; }
         public double Salary { get; set; }
@@ -14,6 +15,7 @@ namespace Project__part_A_
         public bool IsActive { get; set; }
         public int FanCount { get; set; }
 
+        //Constructors
         public Artist()
         {
             throw new NotImplementedException();

@@ -6,11 +6,13 @@ namespace Project__part_A_
 {
     public class Band
     {
+        //Public properties
         public string BandName { get; set; }
         public int MonthlyListening { get; set; }
         public List<Producer> Producers { get; set; }
         public List<Artist> Artists { get; set; }
 
+        //Constructors
         public Band()
         {
             throw new NotImplementedException();

@@ -6,6 +6,7 @@ namespace Project__part_A_
 {
     public class RecordLabel
     {
+        //Public properties
         public string RecordLabelName { get; set; }
         public List<Band> Bands { get; set; }
 
@@ -19,6 +20,7 @@ namespace Project__part_A_
             throw new NotImplementedException();
         }
 
+        //Constructors
         public RecordLabel()
         {
             throw new NotImplementedException();

@@ -6,6 +6,7 @@ namespace Project__part_A_
 {
     public class Producer: IPerson
     {
+        //Public properties
         public string Name { get; set; }
         public int Age { get; set; }
         public double Salary { get; set; }
@@ -13,6 +14,7 @@ namespace Project__part_A_
         public int YearsOfExperience { get; set; }
         public string Specialization { get; set; }
 
+        //Constructors
         public Producer()
         {
             throw new NotImplementedException();
