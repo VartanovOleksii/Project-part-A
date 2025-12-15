@@ -103,7 +103,11 @@ namespace TestProject
             Assert.HasCount(expected.Count, actual);
             for (int i = 0; i < expected.Count; i++)
             {
-                Assert.AreEqual(expected[i], actual[i]);
+                Assert.AreEqual(expected[i].Name, actual[i].Name);
+                Assert.AreEqual(expected[i].Age, actual[i].Age);
+                Assert.AreEqual(expected[i].Salary, actual[i].Salary);
+                Assert.AreEqual(expected[i].YearsOfExperience, actual[i].YearsOfExperience);
+                Assert.AreEqual(expected[i].Specialization, actual[i].Specialization);
             }
         }
 
@@ -123,7 +127,12 @@ namespace TestProject
             Assert.HasCount(expected.Count, actual);
             for (int i = 0; i < expected.Count; i++)
             {
-                Assert.AreEqual(expected[i], actual[i]);
+                Assert.AreEqual(expected[i].Name, actual[i].Name);
+                Assert.AreEqual(expected[i].Age, actual[i].Age);
+                Assert.AreEqual(expected[i].Salary, actual[i].Salary);
+                Assert.AreEqual(expected[i].Instrument, actual[i].Instrument);
+                Assert.AreEqual(expected[i].IsActive, actual[i].IsActive);
+                Assert.AreEqual(expected[i].FanCount, actual[i].FanCount);
             }
         }
     }
