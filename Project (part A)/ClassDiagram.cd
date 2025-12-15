@@ -29,6 +29,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAgAAAhAA=</HashCode>
       <FileName>Song.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Project__part_A_.RecordLabel">
     <Position X="0.75" Y="1.25" Width="3.25" />

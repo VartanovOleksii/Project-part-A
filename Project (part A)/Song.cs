@@ -4,8 +4,23 @@ using System.Text;
 
 namespace Project__part_A_
 {
-    internal class Song
+    internal class Song: IMediaContent
     {
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Stop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<string> GetMetadata()
+        {
+            throw new NotImplementedException();
+        }
+
         public string SongName { get; set; }
         public int TotalPlays { get; set; }
 
