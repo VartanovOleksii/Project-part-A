@@ -59,5 +59,32 @@ namespace TestProject
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        [DataRow(-20)] //less than 0
+        public void TotalPlays_incorrect_input(int count)
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => song.TotalPlays = count);
+        }
+
+        [TestMethod]
+        public void TotalPlays_correct_input()
+        {
+            //Arrange
+            int count = 1500;
+            int expected = count;
+
+            //Act
+            song.TotalPlays = count;
+            int actual = song.TotalPlays;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
