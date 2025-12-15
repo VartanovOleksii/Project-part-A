@@ -7,7 +7,7 @@ namespace TestProject
     {
         private Song song;
 
-        //Сетап
+        //Setup
         [TestInitialize]
         public void Setup()
         {

@@ -7,7 +7,7 @@ namespace TestProject
     {
         private Producer producer;
 
-        //Сетап
+        //Setup
         [TestInitialize]
         public void Setup()
         {

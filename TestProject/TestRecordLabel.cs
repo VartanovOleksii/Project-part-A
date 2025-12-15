@@ -7,7 +7,7 @@ namespace TestProject
     {
         private RecordLabel recordLabel;
 
-        //Сетап
+        //Setup
         [TestInitialize]
         public void Setup()
         {

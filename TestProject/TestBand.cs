@@ -7,7 +7,7 @@ namespace TestProject
     {
         private Band band;
 
-        //Сетап
+        //Setup
         [TestInitialize]
         public void Setup()
         {
